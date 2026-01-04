@@ -46,27 +46,27 @@ local currentGunIndex = 1
 local gunData = {
     rifle = {
         toolName = "[Rifle]",
-        shopName = "[Rifle] - $1694"
+        shopName = "[Rifle] - $1745"
     },
     aug = {
         toolName = "[AUG]",
-        shopName = "[AUG] - $2131"
+        shopName = "[AUG] - $2195"
     },
     flintlock = {
         toolName = "[Flintlock]",
-        shopName = "[Flintlock] - $1421"
+        shopName = "[Flintlock] - $1463"
     },
     lmg = {
         toolName = "[LMG]",
-        shopName = "[LMG] - $4098"
+        shopName = "[LMG] - $4221"
     },
     db = {
         toolName = "[Double-Barrel SG]",
-        shopName = "[Double-Barrel SG] - $1475"
+        shopName = "[Double-Barrel SG] - $1576"
     },
     flamethrower = {
         toolName = "[Flamethrower]",
-        shopName = "[Flamethrower] - $9835"
+        shopName = "[Flamethrower] - $10130"
     },
 }
 
@@ -2049,7 +2049,7 @@ task.spawn(function()
         local Character = Player.Character or Player.CharacterAdded:Wait()
         if flameonly then
             if getNextItemToBuy() == "gun" then
-                local shopName = "[Flamethrower] - $9835"
+                local shopName = "[Flamethrower] - $10130"
                 local toolName = "[Flamethrower]"
                 local shopPart = workspace.Ignored.Shop:FindFirstChild(shopName)
 
@@ -2121,7 +2121,7 @@ task.spawn(function()
                 local ShopFolder = workspace:WaitForChild("Ignored"):WaitForChild("Shop")
 
                 local maskItem = ShopFolder:FindFirstChild(
-                    (math.random(1, 2) == 1 and "[Skull Mask] - $66" or "[Riot Mask] - $66")
+                    (math.random(1, 2) == 1 and "[Skull Mask] - $68" or "[Riot Mask] - $68")
                 )
                 if not maskItem then return end
 
@@ -2173,12 +2173,12 @@ task.spawn(function()
 end)
 
 AmmoMap = {
-    ["[Rifle]"]      = "5 [Rifle Ammo] - $273",
-    ["[AUG]"]        = "90 [AUG Ammo] - $87",
-    ["[Flintlock]"]  = "6 [Flintlock Ammo] - $163",
-    ["[LMG]"]        = "200 [LMG Ammo] - $328",
-    ["[Double-Barrel SG]"] = "18 [Double-Barrel SG Ammo] - $55",
-    ["[Flamethrower]"] = "140 [Flamethrower Ammo] - $1093"
+    ["[Rifle]"]      = "5 [Rifle Ammo] - $281",
+    ["[AUG]"]        = "90 [AUG Ammo] - $90",
+    ["[Flintlock]"]  = "6 [Flintlock Ammo] - $168",
+    ["[LMG]"]        = "200 [LMG Ammo] - $338",
+    ["[Double-Barrel SG]"] = "18 [Double-Barrel SG Ammo] - $68",
+    ["[Flamethrower]"] = "140 [Flamethrower Ammo] - $1126"
 }
 
 task.spawn(function()
