@@ -1412,7 +1412,7 @@ task.spawn(function()
                 if isKO and trashtalkactive then
                     if not hasSentKOMessage then
                         sendMessage("Get MoonStand g g / eQcwXJ77")
-                        sendMessage("Get NOOB")
+                        sendMessage("Is MoonStand even good? nah easily cracked")
                         sendMessage("MoonStand dominated again!")
                         hasSentKOMessage = true
                     end
